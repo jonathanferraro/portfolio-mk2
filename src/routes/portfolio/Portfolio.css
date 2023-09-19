@@ -1,0 +1,155 @@
+.portfolio .main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 150px;
+    max-width: 1000px;
+}
+
+.border {
+    width: 100%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+/* ********************************************************************************************************* */
+
+/* image section */
+
+.images-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.portfolio .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-width: 400px;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.portfolio .image-container .image-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio .image-container img {
+    height: 200px;
+    width: auto;
+}
+
+.test {
+    color: rgb(175, 173, 173);
+}
+
+
+/* ********************************************************************************************************* */
+
+/* about me section */
+
+.about-me {
+    margin-bottom: 50px;
+}
+
+.about-me .about-me-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-me-svg {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(236, 236, 236);
+    border-radius: 100%;
+    padding: 7px 10px 7px 10px;
+}
+
+.about-me .about-me-link {
+    margin-left: 15px;
+
+}
+
+.dots3-svg:hover {
+    cursor: pointer;
+}
+
+.about-me-link p {
+    font-size: .85rem;
+}
+
+.about-me-link-url {
+    margin-top: -10px;
+    color: rgb(163, 163, 163);
+}
+
+.about-me-url-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-me-content-title {
+    color: rgb(52, 52, 248);
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 100px;
+}
+
+.about-me-content-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* ********************************************************************************************************* */
+
+/* skills section */
+
+.skills-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* ********************************************************************************************************* */
+
+/* projects section */
+
+.projects-container {
+    width: 100%;
+}
+
+.projects-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-indv-title {
+    color: rgb(26, 26, 233);
+    font-size: 1.1rem;
+}
+
+.project img {
+    width: 400px;
+    height: 200px;
+}
+
+.project .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 150px;
+}
+
+.header img {
+    position: absolute;
+    height: 35px;
+    left: 25px;
+    top: 20px;
+}
+
+.header-search-bar {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 700px;
+    margin-top: 20px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.mag-glass{
+    position: absolute;
+    left: 830px;
+    top: 27px;
+    color: rgb(64, 64, 241);
+}
+
+.mic-svg{
+    position: absolute;
+    left: 785px;
+    top: 27px;
+    color: rgb(112, 112, 224);
+}
+
+
+.gear-svg {
+    position: absolute;
+    right: 180px;
+    top: 27px;
+    color: rgb(83, 83, 83);
+}
+
+.beaker-svg {
+    position: absolute;
+    right: 130px;
+    top: 29px;
+    color: rgb(83, 83, 83);
+}
+
+.dots-svg {
+    position: absolute;
+    right: 80px;
+    top: 28px;
+    color: rgb(83, 83, 83);
+}
+
+.avatar-svg {
+    position: absolute;
+    right: 30px;
+    top: 27px;
+}
+
+
+
+.mic-svg:hover,
+.mag-glass:hover,
+.gear-svg:hover,
+.beaker-svg:hover,
+.dots-svg:hover,
+.avatar-svg:hover {
+    cursor: pointer;
+}
+
+.nav-links button{
+    background-color: white;
+    border: 1px rgb(197, 194, 194) solid;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 20px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    background-color: rgb(233, 234, 238);
+}
+
+

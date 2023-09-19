@@ -32,7 +32,7 @@ export function SearchPage() {
 
     const handleSearchSlide = () => {
         let { x, y } = searchButtonRef.current.getBoundingClientRect();
-        x = -80
+        x = -150
         y += 20
         setPosition({ x, y });
     };
@@ -53,7 +53,7 @@ export function SearchPage() {
 
     let redirectToPortfolio = () => {
         setTimeout(() => {
-            window.location.href='/portfolio'
+            // window.location.href='/portfolio'
         }, 5700)
     }
 
@@ -68,7 +68,7 @@ export function SearchPage() {
 
 
     useEffect(() => {
-        if (startSearch == true){
+        if (startSearch === true){
             const interval = setInterval(generateSearch, 100);
 
             return () => clearInterval(interval);
