@@ -108,6 +108,8 @@
 
 /* skills section */
 
+
+
 .skills-header {
     display: flex;
     flex-direction: row;
@@ -118,6 +120,78 @@
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.skills-all-images {
+    display: flex;
+    min-height: 400px;
+}
+
+.skills-image img {
+    position: absolute;
+}
+
+.skills-image .active {
+    height: 100px;
+}
+
+.skills-image .static {
+    background-color: white;
+    height: 76px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.css .static {
+    height: 80px;
+}
+
+.css .active {
+    margin-top: 8px;
+}
+
+.elephant .static {
+    height: 100px;
+    margin: 0;
+}
+
+.redux img {
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tailwind img {
+    width: 90px;
+    margin-top: 20px;
+}
+
+.node .active {
+    height: 120px;
+    margin-top: 0px;
+}
+
+.node .static {
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 13px;
+}
+
+.skills-image .static:hover {
+    opacity: 0%;
+    position: absolute;
+    z-index: 999;
+}
+
+.image2 {
+    margin-left: 60px;
+}
+
+.skills-image-title {
+    margin-top: 110px;
+    margin-left: 10px;
+}
+
+
 
 
 /* ********************************************************************************************************* */
