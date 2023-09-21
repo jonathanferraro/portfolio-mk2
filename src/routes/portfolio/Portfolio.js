@@ -30,7 +30,7 @@ export function Portfolio() {
             <p className='border mb-5'></p>
 
             <div className='main'>
-                <p style={{"color": "gray", "margin-top": "-10px"}}>{`About 5.000,000,000 results (${randNum} seconds)`}</p>
+                <p className='text-sm text-gray-400 -mt-4 mb-1'>{`About 5.000,000,000 results (${randNum} seconds)`}</p>
 
                 <div className='image-container'>
                     <div className='image-title'>

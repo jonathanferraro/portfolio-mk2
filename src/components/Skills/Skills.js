@@ -39,10 +39,10 @@ export function Skills() {
 
             <p className='border my-2'></p>
             <div className='skills'>
-                <div className='container flex justify-between select-none ' onClick={showSkillHandler}>
+                <div data-dropdown-toggle="dropdown" className='container flex justify-between select-none' onClick={showSkillHandler}>
                     <p>What skills does Jonathan have?</p>
                     { showSkills ?
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></g></svg> 
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></g></svg> 
                     :
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
                     }
@@ -51,7 +51,11 @@ export function Skills() {
                 </div>
 
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-                <div style={{ display: showSkills ? 'block' : 'none' }} className='skills-all-images mt-5'>
+                {/* style={{ display: showSkills ? 'block' : 'none' }} */}
+                {/* ${showSkills ? 'block' : 'hidden'} */}
+                <div id='dropdown '  style={{ display: showSkills ? 'block' : 'none' }}
+                    className='skills-all-images mt-5 hidden'
+                >
 
                     <div className='skills-image-row'>
                         <div className='flex'>
@@ -69,7 +73,7 @@ export function Skills() {
                                     <img className='static' src={cssStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-5'>CSS</p>
+                                <p className='skills-image-title pl-5'>CSS3</p>
                             </div>
                         </div>
                         <div className='flex'>
@@ -90,7 +94,7 @@ export function Skills() {
                                     <img className='static' src={pythonStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-2'>Python</p>
+                                <p className='skills-image-title pl-2'>Python3</p>
                             </div>
                         </div>
                         <div className='flex'>
@@ -104,7 +108,7 @@ export function Skills() {
                         </div>
                         <div className='flex'>
                             <div className='skills-image image2 redux'>
-                                    <img  src={reduxStatic}/>
+                                    <img className='hover:animate-spin' src={reduxStatic}/>
                                     {/* <img className='static' src={reactImgStatic}/> */}
                             </div>
                             <div>
@@ -125,7 +129,7 @@ export function Skills() {
                         </div>
                         <div className='flex'>
                             <div className='skills-image image2 tailwind'>
-                                    <img  src={tailwindcssStatic}/>
+                                    <img className='hover:animate-bounce' src={tailwindcssStatic}/>
                                     {/* <img className='static' src={elephantStatic}/> */}
                             </div>
                             <div>
