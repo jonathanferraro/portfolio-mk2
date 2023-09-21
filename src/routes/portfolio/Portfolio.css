@@ -9,7 +9,7 @@
 .border {
     width: 100%;
     border-bottom: 1px solid rgb(189, 189, 189);
-}
+} 
 
 /* ********************************************************************************************************* */
 
@@ -109,7 +109,6 @@
 /* skills section */
 
 
-
 .skills-header {
     display: flex;
     flex-direction: row;
@@ -123,7 +122,19 @@
 
 .skills-all-images {
     display: flex;
+    flex-direction: column;
     min-height: 400px;
+
+}
+
+.skills-image-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.new-row {
+    margin-top: 180px;
 }
 
 .skills-image img {
@@ -154,6 +165,13 @@
     margin: 0;
 }
 
+.javascript .active {
+    height: 120px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+
 .redux img {
     height: 70px;
     margin-top: 10px;
@@ -161,8 +179,13 @@
 }
 
 .tailwind img {
-    width: 90px;
+    width: 80px;
     margin-top: 20px;
+    margin-left: 10px;
+}
+
+.github img {
+    height: 60px;
 }
 
 .node .active {

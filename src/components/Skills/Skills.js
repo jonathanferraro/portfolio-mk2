@@ -29,7 +29,7 @@ export function Skills() {
 
     return (
         
-        <div className='skills-container container mb-5 max-w-7'>
+        <div className='skills-container container mb-16 max-w-7'>
 
             <div className='skills-header'>
                 <p className='text-2xl '>People also ask</p>
@@ -39,123 +39,127 @@ export function Skills() {
 
             <p className='border my-2'></p>
             <div className='skills'>
-                <div className='container flex justify-between select-none' onClick={showSkillHandler}>
-                    <p >What skills does Jonathan have?</p>
+                <div className='container flex justify-between select-none ' onClick={showSkillHandler}>
+                    <p>What skills does Jonathan have?</p>
                     { showSkills ?
-                        <p className='pr-3'>^</p> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></g></svg> 
                     :
-                    <p className='pr-3'>V</p> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
                     }
 
 
                 </div>
 
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-                <div className='skills-all-images'>
+                <div style={{ display: showSkills ? 'block' : 'none' }} className='skills-all-images mt-5'>
 
-                <div className='flex'>
-                <div className='skills-image'>
-                        <img className='active' src={html}/>
-                        <img className='static' src={htmlStatic}/>
-                </div>
-                <div>
-                    <p className='skills-image-title pl-3'>HTML5</p>
-                </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 css'>
-                            <img className='active' src={css}/>
-                            <img className='static' src={cssStatic}/>
+                    <div className='skills-image-row'>
+                        <div className='flex'>
+                            <div className='skills-image'>
+                                    <img className='active' src={html}/>
+                                    <img className='static' src={htmlStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-3'>HTML5</p>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <div className='skills-image image2 css'>
+                                    <img className='active' src={css}/>
+                                    <img className='static' src={cssStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-5'>CSS</p>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <div className='skills-image image2 elephant javascript'>
+                                    <img className='active' src={javascript}/>
+                                    <img className='static' src={javascriptStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title'>Javascript</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p className='skills-image-title pl-5'>CSS</p>
+
+                    <div className='skills-image-row pt-3'>
+                        <div>
+                            <div className='skills-image elephant'>
+                                    <img className='active' src={python}/>
+                                    <img className='static' src={pythonStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-2'>Python</p>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <div className='skills-image image2 elephant'>
+                                    <img className='active' src={reactImg}/>
+                                    <img className='static' src={reactImgStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-4'>React</p>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <div className='skills-image image2 redux'>
+                                    <img  src={reduxStatic}/>
+                                    {/* <img className='static' src={reactImgStatic}/> */}
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-4'>Redux</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 elephant'>
-                            <img className='active' src={javascript}/>
-                            <img className='static' src={javascriptStatic}/>
+
+                    <div className='skills-image-row  pt-4'>
+                        <div className='flex'>
+                            <div className='skills-image  elephant'>
+                                    <img className='active' src={elephant}/>
+                                    <img className='static' src={elephantStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title'>Postgres</p>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <div className='skills-image image2 tailwind'>
+                                    <img  src={tailwindcssStatic}/>
+                                    {/* <img className='static' src={elephantStatic}/> */}
+                            </div>
+                            <div>
+                                <p className='skills-image-title'>Tailwind CSS</p>
+                            </div>
+                        </div>
+                        <div className='flex -ml-10'>
+                            <div className='skills-image image2 elephant github'>
+                                    <img className='active' src={github}/>
+                                    <img className='static' src={githubStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-3'>Github</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p className='skills-image-title'>Javascript</p>
+
+                    <div className='skills-image-row pb-6'>
+                        <div className='flex -ml-5'>
+                            <div className='skills-image node'>
+                                    <img className='active' src={node}/>
+                                    <img className='static' src={nodeStatic}/>
+                            </div>
+                            <div>
+                                <p className='skills-image-title pl-7 pt-1 '>Node</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 elephant'>
-                            <img className='active' src={python}/>
-                            <img className='static' src={pythonStatic}/>
-                    </div>
-                    <div>
-                        <p className='skills-image-title pl-2'>Python</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 elephant'>
-                            <img className='active' src={reactImg}/>
-                            <img className='static' src={reactImgStatic}/>
-                    </div>
-                    <div>
-                        <p className='skills-image-title pl-4'>React</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 redux'>
-                            <img  src={reduxStatic}/>
-                            {/* <img className='static' src={reactImgStatic}/> */}
-                    </div>
-                    <div>
-                        <p className='skills-image-title pl-4'>Redux</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 elephant'>
-                            <img className='active' src={elephant}/>
-                            <img className='static' src={elephantStatic}/>
-                    </div>
-                    <div>
-                        <p className='skills-image-title'>Postgres</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 tailwind'>
-                            <img  src={tailwindcssStatic}/>
-                            {/* <img className='static' src={elephantStatic}/> */}
-                    </div>
-                    <div>
-                        <p className='skills-image-title'>Tailwind CSS</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 elephant'>
-                            <img className='active' src={github}/>
-                            <img className='static' src={githubStatic}/>
-                    </div>
-                    <div>
-                        <p className='skills-image-title pl-3'>Github</p>
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className='skills-image image2 node'>
-                            <img className='active' src={node}/>
-                            <img className='static' src={nodeStatic}/>
-                    </div>
-                    <div>
-                        <p className='skills-image-title pl-7 pt-1'>Node</p>
-                    </div>
-                </div>
 
                         
                 </div>
 
 
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-
-
-
-                <p style={{ display: showSkills ? 'block' : 'none' }}>
-                    Test test test test Test test test test Test test test test Test test test test
-                    
-                </p>
 
                 
             </div>
