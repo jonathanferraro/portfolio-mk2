@@ -37,6 +37,13 @@
     color: rgb(112, 112, 224);
 }
 
+.header-logos {
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
 
 .gear-svg {
     position: absolute;
@@ -64,6 +71,8 @@
     right: 30px;
     top: 27px;
 }
+
+
 
 
 

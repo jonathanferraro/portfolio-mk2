@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
 
-import elephant from '../../logos/elephant.gif';
+import elephant from '../../logos/elephant2.gif';
 import elephantStatic from '../../logos/elephant-static.png';
-import html from '../../logos/html.gif';
-import htmlStatic from '../../logos/html-static.png';
-import css from '../../logos/css.gif';
+import html from '../../logos/html2.gif';
+import htmlStatic from '../../logos/html-static2.png';
+import css from '../../logos/css2.gif';
 import cssStatic from '../../logos/css-static.png';
-import javascript from '../../logos/javascript.gif';
-import javascriptStatic from '../../logos/javascript-static.png';
+import javascript from '../../logos/javascript2.gif';
+import javascriptStatic from '../../logos/javascript-static2.png';
 import python from '../../logos/python.gif';
 import pythonStatic from '../../logos/python-static.png';
 import github from '../../logos/github.gif';
 import githubStatic from '../../logos/github-static.png';
-import reactImg from '../../logos/reactImg.gif';
-import reactImgStatic from '../../logos/reactImg-static.png';
+import reactImg from '../../logos/reactImg2.gif';
+import reactImgStatic from '../../logos/reactImg-static2.png';
 import reduxStatic from '../../logos/redux-static.png';
 import tailwindcssStatic from '../../logos/tailwindcss-static.png';
-import node from '../../logos/node.gif';
-import nodeStatic from '../../logos/node-static.PNG';
+import node from '../../logos/node2.gif';
+import nodeStatic from '../../logos/node-static2.png';
 
 export function Skills() {
     const [showSkills, setShowSkills] = useState(false);
@@ -29,7 +29,7 @@ export function Skills() {
 
     return (
         
-        <div className='skills-container container mb-16 max-w-7'>
+        <div className='skills-container container mb-16 max-w-7 '>
 
             <div className='skills-header'>
                 <p className='text-2xl '>People also ask</p>
@@ -54,14 +54,15 @@ export function Skills() {
                 {/* style={{ display: showSkills ? 'block' : 'none' }} */}
                 {/* ${showSkills ? 'block' : 'hidden'} */}
                 <div id='dropdown '  style={{ display: showSkills ? 'block' : 'none' }}
-                    className='skills-all-images mt-5 hidden'
+                    className='skills-all-images mt-5 hidden 
+                    '
                 >
 
                     <div className='skills-image-row'>
                         <div className='flex'>
-                            <div className='skills-image'>
+                            <div className='skills-image '>
                                     <img className='active' src={html}/>
-                                    <img className='static' src={htmlStatic}/>
+                                    <img className='static  bg-white dark:bg-gray-900' src={htmlStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-3'>HTML5</p>
@@ -70,7 +71,7 @@ export function Skills() {
                         <div className='flex'>
                             <div className='skills-image image2 css'>
                                     <img className='active' src={css}/>
-                                    <img className='static' src={cssStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={cssStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-5'>CSS3</p>
@@ -79,7 +80,7 @@ export function Skills() {
                         <div className='flex'>
                             <div className='skills-image image2 elephant javascript'>
                                     <img className='active' src={javascript}/>
-                                    <img className='static' src={javascriptStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={javascriptStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title'>Javascript</p>
@@ -90,8 +91,8 @@ export function Skills() {
                     <div className='skills-image-row pt-3'>
                         <div>
                             <div className='skills-image elephant'>
-                                    <img className='active' src={python}/>
-                                    <img className='static' src={pythonStatic}/>
+                                    <img className='active ' src={python}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={pythonStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-2'>Python3</p>
@@ -100,7 +101,7 @@ export function Skills() {
                         <div className='flex'>
                             <div className='skills-image image2 elephant'>
                                     <img className='active' src={reactImg}/>
-                                    <img className='static' src={reactImgStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={reactImgStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-4'>React</p>
@@ -121,7 +122,7 @@ export function Skills() {
                         <div className='flex'>
                             <div className='skills-image  elephant'>
                                     <img className='active' src={elephant}/>
-                                    <img className='static' src={elephantStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={elephantStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title'>Postgres</p>
@@ -139,7 +140,7 @@ export function Skills() {
                         <div className='flex -ml-10'>
                             <div className='skills-image image2 elephant github'>
                                     <img className='active' src={github}/>
-                                    <img className='static' src={githubStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={githubStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-3'>Github</p>
@@ -151,7 +152,7 @@ export function Skills() {
                         <div className='flex -ml-5'>
                             <div className='skills-image node'>
                                     <img className='active' src={node}/>
-                                    <img className='static' src={nodeStatic}/>
+                                    <img className='static bg-white dark:bg-gray-900' src={nodeStatic}/>
                             </div>
                             <div>
                                 <p className='skills-image-title pl-7 pt-1 '>Node</p>

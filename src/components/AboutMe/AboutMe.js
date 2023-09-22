@@ -21,7 +21,7 @@ export function AboutMe() {
             </div>
             
         </div>
-        <div className='text-xl text-blue-700 mt-2'>About Me</div>
+        <div className='text-xl text-blue-500 mt-2'>About Me</div>
         <div>
             I'm a driven software engineer who thrives on challenges and believes in the power of technology 
             to simplify complex problems. My passion lies in continuous growth within the field, and I'm committed 

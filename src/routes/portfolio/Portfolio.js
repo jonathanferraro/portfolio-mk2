@@ -7,6 +7,7 @@ import { Header } from '../../components/Header/Header';
 import { AboutMe } from '../../components/AboutMe/AboutMe';
 import { Skills } from '../../components/Skills/Skills';
 import { Projects } from '../../components/Projects/Projects';
+import portrait from '../../logos/portrait.jpg';
 
 
 export function Portfolio() {
@@ -22,10 +23,8 @@ export function Portfolio() {
     }, []);
 
 
-
-
     return (
-        <div className='portfolio'>
+        <div className='portfolio dark:bg-gray-900 dark:text-white'>
             <Header />
             <p className='border mb-5'></p>
 
@@ -40,7 +39,7 @@ export function Portfolio() {
 
                     </div>
                     <img
-                     src='https://agreatdream.com/wp-content/uploads/2012/04/question-mark.jpg'/>
+                     src={portrait}/>
                 </div>
 
                 <AboutMe />
