@@ -18,7 +18,7 @@ export function Projects() {
             <div className='flex justify-center lg:justify-start'>
                 <img
                 src={project1}
-                className='my-5 mr-20'/>
+                className='my-5 lg:mr-20'/>
             </div>
 
             {/* proj */}
@@ -59,7 +59,7 @@ export function Projects() {
             <div className='flex justify-center lg:justify-start'>
                 <img
                 src={project2}
-                className='my-5 mr-20'/>
+                className='my-5 lg:mr-20'/>
             </div>
 
             {/* proj */}

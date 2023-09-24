@@ -24,7 +24,7 @@ export function Portfolio() {
 
 
     return (
-        <div className='portfolio dark:bg-gray-900 dark:text-white'>
+        <div className='portfolio dark:bg-gray-900 dark:text-white mr-5'>
             <Header />
             <p className='border mb-5'></p>
 

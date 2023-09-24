@@ -53,7 +53,7 @@ export function SearchPage() {
 
     let redirectToPortfolio = () => {
         setTimeout(() => {
-            // window.location.href='/portfolio'
+            window.location.href='/portfolio'
         }, 5700)
     }
 
