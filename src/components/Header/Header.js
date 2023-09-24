@@ -22,17 +22,21 @@ export function Header() {
     return (
         <div className='header'>
             
-                <div>
-                    <img src={search} />
+            
+                <img src={search} />
+                <div className='header-search-bar
+                    w-10/12 max-w-2xl flex justify-between'>
                     <input
-                        className='header-search-bar'
+                        
                         type='text'
                         value="   Jonathan's Portfolio"
                     />
+                    <div className='flex '>
+                        <svg className='mic-svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m7 9c0 3.53-2.61 6.44-6 6.93V21h-2v-3.07c-3.39-.49-6-3.4-6-6.93h2a5 5 0 0 0 5 5a5 5 0 0 0 5-5h2Z"/></svg>
+                        <svg className='mag-glass ml-3 mr-3' xmlns="http://www.w3.org/2000/svg" width="17" height="25" viewBox="0 0 512 512"><path fill="currentColor" d="M414 354q-18-18-41-11l-32-32q43-53 43-119q0-80-56-136T192 0T56 56T0 192t56 136t136 56q70 0 119-43l32 32q-6 24 11 41l85 85q13 13 30 13q18 0 30-13q13-13 13-30t-13-30zm-222-13q-62 0-105.5-43.5T43 192T86.5 86.5T192 43t105.5 43.5T341 192t-43.5 105.5T192 341z"/></svg>
+                    </div>
                 </div>
 
-                <svg className='mic-svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m7 9c0 3.53-2.61 6.44-6 6.93V21h-2v-3.07c-3.39-.49-6-3.4-6-6.93h2a5 5 0 0 0 5 5a5 5 0 0 0 5-5h2Z"/></svg>
-                <svg className='mag-glass' xmlns="http://www.w3.org/2000/svg" width="17" height="25" viewBox="0 0 512 512"><path fill="currentColor" d="M414 354q-18-18-41-11l-32-32q43-53 43-119q0-80-56-136T192 0T56 56T0 192t56 136t136 56q70 0 119-43l32 32q-6 24 11 41l85 85q13 13 30 13q18 0 30-13q13-13 13-30t-13-30zm-222-13q-62 0-105.5-43.5T43 192T86.5 86.5T192 43t105.5 43.5T341 192t-43.5 105.5T192 341z"/></svg>
             
 
                 <div className=' header-logos mt-5 '>
