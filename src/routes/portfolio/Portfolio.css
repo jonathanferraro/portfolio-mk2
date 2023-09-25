@@ -185,6 +185,8 @@
     margin-left: 10px;
 }
 
+
+
 .github img {
     height: 60px;
 }
@@ -214,6 +216,73 @@
     margin-top: 110px;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 1064px) {
+    .skills-image .active {
+        height: 75px;
+        margin-top: -5px;
+    }
+    
+    .skills-image .static {
+    
+        height: 76px;
+        margin-left: 0px;
+        margin-top: -5px;
+    }
+
+    .image2 {
+        margin-left: 30px;
+    }
+
+    .javascript .active {
+        height: 100px;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+
+    .css .static {
+        height: 65px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+
+    .css .active {
+        margin-top: 0px;
+    }
+
+    .node .active {
+        height: 130px;
+        margin-top: -18px;
+        margin-left: -5px;
+    }
+
+    .html .active {
+        height: 100px;
+        margin-top: -17px;
+        margin-left: -12px;
+    }
+
+    .github .active {
+        margin-left: 20px;
+    }
+
+    .github .static {
+        margin-left: 20px;
+    }
+
+    
+
+    .tailwind img{
+        margin-top: 8px;
+    }
+
+    .skills-image-title {
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+   
+  }
 
 
 

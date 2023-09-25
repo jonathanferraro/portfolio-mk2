@@ -60,7 +60,7 @@ export function Skills() {
 
                     <div className='skills-image-row'>
                         <div className='flex'>
-                            <div className='skills-image '>
+                            <div className='skills-image html'>
                                     <img className='active' src={html}/>
                                     <img className='static  bg-white dark:bg-gray-900' src={htmlStatic}/>
                             </div>
@@ -143,7 +143,7 @@ export function Skills() {
                                     <img className='static bg-white dark:bg-gray-900' src={githubStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-3'>Github</p>
+                                <p className='skills-image-title pl-8'>Github</p>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export function Skills() {
                                     <img className='static bg-white dark:bg-gray-900' src={nodeStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-7 pt-1 '>Node</p>
+                                <p className='skills-image-title pl-10  '>Node</p>
                             </div>
                         </div>
                     </div>

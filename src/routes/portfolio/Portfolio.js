@@ -7,7 +7,7 @@ import { Header } from '../../components/Header/Header';
 import { AboutMe } from '../../components/AboutMe/AboutMe';
 import { Skills } from '../../components/Skills/Skills';
 import { Projects } from '../../components/Projects/Projects';
-import portrait from '../../logos/portrait.jpg';
+import portrait from '../../logos/portrait3.jpg';
 
 
 export function Portfolio() {
@@ -40,6 +40,7 @@ export function Portfolio() {
 
                     </div>
                     <img
+                     className='rounded-3xl'
                      src={portrait}/>
                 </div>
 
