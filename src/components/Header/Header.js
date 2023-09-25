@@ -27,7 +27,7 @@ export function Header() {
                 <div className='header-search-bar
                     w-10/12 max-w-2xl flex justify-between'>
                     <input
-                        
+                        className='dark:bg-gray-900'
                         type='text'
                         value="   Jonathan's Portfolio"
                     />
