@@ -155,7 +155,7 @@ export function Skills() {
                                     <img className='static bg-white dark:bg-gray-900' src={nodeStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-10  '>Node</p>
+                                <p className='skills-image-title pl-10 lg:pl-7  '>Node</p>
                             </div>
                         </div>
                     </div>

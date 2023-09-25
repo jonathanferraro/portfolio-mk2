@@ -134,6 +134,15 @@
 
 }
 
+.nav-links .converse {
+
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 20px 5px 5px 0px;
+    cursor: pointer;
+}
+
 .nav-links p:hover {
     background-color: rgb(233, 234, 238);
 }
