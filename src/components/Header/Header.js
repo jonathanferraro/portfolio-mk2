@@ -23,11 +23,12 @@ export function Header() {
         <div className='header'>
             
             
-                <img src={search} />
+                <img className='search-logo'
+                 src={search} />
                 <div className='header-search-bar
-                    w-10/12 max-w-2xl flex justify-between'>
+                    dark:bg-gray-700 w-10/12 max-w-2xl flex justify-between'>
                     <input
-                        className='dark:bg-gray-900'
+                        className='dark:bg-gray-700'
                         type='text'
                         value="   Jonathan's Portfolio"
                     />
@@ -39,7 +40,7 @@ export function Header() {
 
             
 
-                <div className=' header-logos mt-5 '>
+                <div className=' header-logos mt-6 '>
                     {theme === 'light' ? 
                         <svg onClick={handleThemeSwitch} className='cursor-pointer mr-3 mt-0.5 hover:rotate-180 duration-300' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><defs><mask id="lineMdLightDark0"><circle cx="7.5" cy="7.5" r="5.5" fill="#fff"/><circle cx="7.5" cy="7.5" r="5.5"><animate fill="freeze" attributeName="cx" dur="0.4s" values="7.5;11"/><animate fill="freeze" attributeName="r" dur="0.4s" values="5.5;6.5"/></circle></mask><mask id="lineMdLightDark1"><g fill="#fff"><circle cx="12" cy="9" r="5.5"><animate fill="freeze" attributeName="cy" begin="1s" dur="0.5s" values="9;15"/></circle><g fill-opacity="0"><use href="#lineMdLightDark2" transform="rotate(-75 12 15)"/><use href="#lineMdLightDark2" transform="rotate(-25 12 15)"/><use href="#lineMdLightDark2" transform="rotate(25 12 15)"/><use href="#lineMdLightDark2" transform="rotate(75 12 15)"/><set attributeName="fill-opacity" begin="1.5s" to="1"/></g></g><path d="M0 10h26v5h-26z"/><path fill="none" stroke="#fff" stroke-dasharray="26" stroke-dashoffset="26" stroke-linecap="round" stroke-width="2" d="M1 12h22"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="26;52"/></path></mask><symbol id="lineMdLightDark2"><path d="M0 0"><animate fill="freeze" attributeName="d" begin="1.5s" dur="0.4s" values="M11 18h2L12 20z;M10.5 21.5h3L12 24z"/></path></symbol></defs><g fill="currentColor"><rect width="13" height="13" x="1" y="1" mask="url(#lineMdLightDark0)"/><path d="M-2 11h28v13h-28z" mask="url(#lineMdLightDark1)" transform="rotate(-45 12 12)"/></g></g></svg>
                     :
@@ -55,16 +56,11 @@ export function Header() {
             
 
             <div className='nav-links'>
-
-                <button>About</button>
-                <button>Skills</button>
-                <button>Projects</button>
-                <button>Converse</button>
-
+                <p>About</p>
+                <p>Skills</p>
+                <p>Projects</p>
+                <p>Converse</p>
             </div>
-            
-
-
 
         </div>
     )
