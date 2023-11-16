@@ -47,22 +47,9 @@ export function Portfolio() {
 
                 <AboutMe />
                 <Skills />
-
                 <Projects />
-
-
-
-                <h1>Contact Section</h1>
-
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <Contact />
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+
 
 
                 

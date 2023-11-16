@@ -51,3 +51,12 @@
       color: white;
       border: none;
     }
+
+
+
+    @media screen and (max-width: 1064px) {
+      .contact {
+        max-width: 95%;
+      }
+
+    }

@@ -57,7 +57,7 @@ export function Contact() {
     };
   
     return (
-        <div className='contact'>
+        <div className='contact mt-14 mb-12'>
             <p className='text-2xl '>Contact</p>
             <div id='contact-link'>
                 <p className={`${formStatus == 'Message sent successfully' ? 'text-green-500' : 'text-red-500'}`}>{formStatus}</p>
