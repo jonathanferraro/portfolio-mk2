@@ -7,7 +7,7 @@ export function Projects() {
 
 
     return (
-        <div className='projects-container'>
+        <div className='projects-container' id='projects-link'>
             <div className=' flex mb-1'>
                 <p className='text-2xl mb-3 cursor-pointer hover:text-blue-800'>Projects</p>
                 <svg className='mt-1 text-gray-600 cursor-pointer hover:text-blue-800' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></g></svg>

@@ -29,7 +29,7 @@ export function Skills() {
 
     return (
         
-        <div className='skills-container container mb-16 max-w-7 '>
+        <div className='skills-container container mb-16 max-w-7 ' id='skills-link'>
 
             <div className='skills-header'>
                 <p className='text-2xl '>People also ask</p>

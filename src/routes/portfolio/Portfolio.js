@@ -7,6 +7,7 @@ import { Header } from '../../components/Header/Header';
 import { AboutMe } from '../../components/AboutMe/AboutMe';
 import { Skills } from '../../components/Skills/Skills';
 import { Projects } from '../../components/Projects/Projects';
+import { Contact } from '../../components/Contact/Contact';
 import portrait from '../../logos/portrait3.jpg';
 
 
@@ -52,16 +53,16 @@ export function Portfolio() {
 
 
                 <h1>Contact Section</h1>
-                <input />
-                <br/>
-                <input />
-                <br/>
-                <input />
-                <br/>
-                <br/>
-                <br/>
-                <br/>
 
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <Contact />
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
 
                 

@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './Header.css';
 import search from '../../search.jpg';
 
+import { Link } from 'react-router-dom'
+
 
 export function Header() {
     const [theme, setTheme] = useState('light');
@@ -17,6 +19,18 @@ export function Header() {
     const handleThemeSwitch = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
     }
+
+    const scrollToSection = (id) => {
+        const sectionElement = document.getElementById(id);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+    };
 
 
     return (
@@ -57,14 +71,16 @@ export function Header() {
 
             <div className='nav-links '>
                 <p className='dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'>About</p>
-                <p className='dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'> Skills</p>
-                <p className='dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'>Projects</p>
+                <p className='dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'
+                    onClick={()=>scrollToSection('skills-link')}
+                    > Skills</p>
+                <p className='dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'
+                    onClick={()=>scrollToSection('projects-link')}
+                    >Projects</p>
                 <p className='flex border converse dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white dark:border-gray-500'>
                     <svg className='dark:border-gray-500' xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 24 18"><g transform="rotate(180 12 12)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 5l-5 5l5 5"/><path d="M3 10h8c5.523 0 10 4.477 10 10v1"/></g></g></svg>
-                    <div className='dark:border-gray-500' >Converse</div>
-                </p>
-
-
+                    <div onClick={()=>scrollToSection('contact-link')} className='dark:border-gray-500' >Converse</div>
+                    </p>
             </div>
 
         </div>
