@@ -46,13 +46,8 @@ export function Skills() {
                     :
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
                     }
-
-
                 </div>
 
-                {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-                {/* style={{ display: showSkills ? 'block' : 'none' }} */}
-                {/* ${showSkills ? 'block' : 'hidden'} */}
                 <div id='dropdown '  style={{ display: showSkills ? 'block' : 'none' }}
                     className='skills-all-images mt-5 hidden 
                     '
@@ -133,8 +128,8 @@ export function Skills() {
                                     <img className='hover:animate-bounce' src={tailwindcssStatic}/>
                                     {/* <img className='static' src={elephantStatic}/> */}
                             </div>
-                            <div>
-                                <p className='skills-image-title'>Tailwind CSS</p>
+                            <div className='tailwind-p'>
+                                <p className='skills-image-title '>Tailwind CSS</p>
                             </div>
                         </div>
                         <div className='flex -ml-10'>
@@ -143,7 +138,7 @@ export function Skills() {
                                     <img className='static bg-white dark:bg-gray-900' src={githubStatic}/>
                             </div>
                             <div>
-                                <p className='skills-image-title pl-8'>Github</p>
+                                <p className='skills-image-title pl-4'>Github</p>
                             </div>
                         </div>
                     </div>
@@ -159,13 +154,8 @@ export function Skills() {
                             </div>
                         </div>
                     </div>
-
                         
                 </div>
-
-
-            {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-
                 
             </div>
             <p className='border my-2'></p>

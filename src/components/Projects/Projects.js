@@ -15,16 +15,20 @@ export function Projects() {
 
         <p className='border'></p>
         <div className='project flex flex-col lg:flex-row '>
-            <div className='flex justify-center lg:justify-start'>
-                <img
-                src={project1}
-                className='my-5 lg:mr-20'/>
+            <div className='flex justify-center lg:justify-start ' >
+                <a href='https://breaddit-client.netlify.app/'>
+                    <img
+                    src={project1}
+                    className='my-5 lg:mr-20'/>
+                </a>
             </div>
 
             {/* proj */}
             <div className='project-info my-3'>
                 <div className='container flex flex-row justify-between'>
-                    <p className='text-blue-500 '>Reddit Clone</p>
+                    <a href='https://breaddit-client.netlify.app/'>
+                        <p className='text-blue-500 '>Reddit Clone</p>
+                    </a>
                     <div className='flex flex-row hidden lg:flex '>
                         <p className='mr-2 '>Technologies-</p>
                         <a title='CSS'><svg className='text-blue-700 mt-1' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M3 1.6a.25.25 0 0 0-.25.25v9.55c0 .09.048.172.125.217l4.859 2.802a.25.25 0 0 0 .245.003l5.141-2.817a.25.25 0 0 0 .13-.22V1.85A.25.25 0 0 0 13 1.6H3Zm-1.75.25C1.25.884 2.034.1 3 .1h10c.966 0 1.75.784 1.75 1.75v9.536a1.75 1.75 0 0 1-.909 1.534L8.7 15.738a1.75 1.75 0 0 1-1.716-.02l-4.858-2.802A1.75 1.75 0 0 1 1.25 11.4V1.85ZM5 4.35a.75.75 0 0 1 .75-.75h4.615a.75.75 0 0 1 .75.75v6.096a.75.75 0 0 1-.414.671l-2.308 1.154a.75.75 0 0 1-.67 0l-2.308-1.154a.75.75 0 0 1-.415-.67v-.578a.75.75 0 1 1 1.5 0v.114l1.558.778l1.557-.778V8.312H7a.75.75 0 1 1 0-1.5h2.615V5.1H5.75A.75.75 0 0 1 5 4.35Z"/></svg></a>
@@ -57,15 +61,19 @@ export function Projects() {
         <p className='border'></p>
         <div className='project my-3 project flex flex-col lg:flex-row '>
             <div className='flex justify-center lg:justify-start'>
-                <img
-                src={project2}
-                className='my-5 lg:mr-20'/>
+                <a href='https://ecom-view.onrender.com/'>
+                    <img
+                    src={project2}
+                    className='my-5 lg:mr-20'/>
+                </a>
             </div>
 
             {/* proj */}
             <div className='project-info'>
                 <div className='container flex flex-row justify-between'>
-                    <p className='text-blue-500 '>E-Commerce Website | Fullstack</p>
+                    <a href='https://ecom-view.onrender.com/'>
+                        <p className='text-blue-500 '>E-Commerce Website | Fullstack</p>
+                    </a>
                     <div className='flex flex-row hidden lg:flex'>
                         <p className='mr-2 flex flex-row hidden lg:flex '>Technologies-</p>
                         <a title='CSS'><svg className='text-blue-700 mt-1' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M3 1.6a.25.25 0 0 0-.25.25v9.55c0 .09.048.172.125.217l4.859 2.802a.25.25 0 0 0 .245.003l5.141-2.817a.25.25 0 0 0 .13-.22V1.85A.25.25 0 0 0 13 1.6H3Zm-1.75.25C1.25.884 2.034.1 3 .1h10c.966 0 1.75.784 1.75 1.75v9.536a1.75 1.75 0 0 1-.909 1.534L8.7 15.738a1.75 1.75 0 0 1-1.716-.02l-4.858-2.802A1.75 1.75 0 0 1 1.25 11.4V1.85ZM5 4.35a.75.75 0 0 1 .75-.75h4.615a.75.75 0 0 1 .75.75v6.096a.75.75 0 0 1-.414.671l-2.308 1.154a.75.75 0 0 1-.67 0l-2.308-1.154a.75.75 0 0 1-.415-.67v-.578a.75.75 0 1 1 1.5 0v.114l1.558.778l1.557-.778V8.312H7a.75.75 0 1 1 0-1.5h2.615V5.1H5.75A.75.75 0 0 1 5 4.35Z"/></svg></a>

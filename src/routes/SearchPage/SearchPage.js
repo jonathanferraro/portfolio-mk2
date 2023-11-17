@@ -8,6 +8,7 @@ export function SearchPage() {
     const test = "Jonathan's Portfolio";
     const [currentIndex, setCurrentIndex] = useState(0);
     const [startSearch, setStartSearch] = useState(false);
+    const [searchButtonColor, setSearchButtonColor] = useState('#f5f5f5')
 
     const generateSearch = () => {
         if (currentIndex < test.length) {
@@ -26,13 +27,13 @@ export function SearchPage() {
     const handleSlide = () => {
         let { x, y } = searchBarRef.current.getBoundingClientRect();
         x = 0
-        y += 170
+        y += 20
         setPosition({ x, y });
     };
 
     const handleSearchSlide = () => {
         let { x, y } = searchButtonRef.current.getBoundingClientRect();
-        x = -150
+        x = -100
         y += 20
         setPosition({ x, y });
     };
@@ -51,16 +52,30 @@ export function SearchPage() {
         }, 4000)
     };
 
+    let searchButtonClick = () => {
+        setTimeout(() => {
+            setSearchButtonColor('#aaa8a8')
+        }, 5500)
+    }
+
+    let searchButtonUnClick = () => {
+        setTimeout(() => {
+            setSearchButtonColor('#f5f5f5')
+        }, 5700)
+    }
+
     let redirectToPortfolio = () => {
         setTimeout(() => {
             window.location.href='/portfolio'
-        }, 5700)
+        }, 6000)
     }
 
     useEffect(() => {  
         handleSlide()
         waitStartSearch();
         waitMoveToSearch();
+        searchButtonClick();
+        searchButtonUnClick();
         redirectToPortfolio()
     }, [])
 
@@ -96,9 +111,9 @@ export function SearchPage() {
                 type='text'
                 ref={searchBarRef}
                 value={searchWord}/>
-                <div>
-                    <button id='search-button' ref={searchButtonRef}>Search</button>
-                    <button>I'm Feeling Fortunate</button>
+                <div className='search-button-container'>
+                    <button style={{'background-color': searchButtonColor}} id='search-button' ref={searchButtonRef}>Search</button>
+                    <button >I'm Feeling Fortunate</button>
                 </div>
             </div>
 

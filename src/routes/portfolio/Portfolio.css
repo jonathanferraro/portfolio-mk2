@@ -185,6 +185,10 @@
     margin-left: 10px;
 }
 
+.tailwind-p {
+    margin-left: -10px;
+    margin-right: 10px;
+}
 
 
 .github img {

@@ -63,7 +63,7 @@ export function Contact() {
                 <p className={`${formStatus == 'Message sent successfully' ? 'text-green-500' : 'text-red-500'}`}>{formStatus}</p>
             </div>
             <form ref={form} onSubmit={sendEmail}>
-                {/* bot spam input field */}
+                {/* honeypot input field */}
                 <input style={{'display' : 'none'}} type='text' name='honeypot' onChange={honeypotChecker}/>
 
                 <label>Name</label>
@@ -72,7 +72,7 @@ export function Contact() {
                 <input type="email" name="user_email" required />
                 <label>Message</label>
                 <textarea name="message" required />
-                <input type="submit" value="Send" />
+                <button className='contact-submit' type="submit" value="Send" > fsdfsd</button>
             </form>
       </div>
     );
