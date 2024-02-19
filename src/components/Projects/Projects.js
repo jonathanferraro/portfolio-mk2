@@ -19,7 +19,7 @@ export function Projects() {
                 <a href='https://breaddit-client.netlify.app/'>
                     <img
                     src={project1}
-                    className='my-5 lg:mr-20'/>
+                    className='my-5 lg:mr-20 rounded-2xl'/>
                 </a>
             </div>
 
@@ -64,7 +64,7 @@ export function Projects() {
                 <a href='https://ecom-view.onrender.com/'>
                     <img
                     src={project2}
-                    className='my-5 lg:mr-20'/>
+                    className='my-5 lg:mr-20 rounded-2xl'/>
                 </a>
             </div>
 

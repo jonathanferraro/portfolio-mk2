@@ -57,14 +57,14 @@ export function Contact() {
     };
   
     return (
-        <div className='contact mt-14 mb-12'>
+        <div className='contact mt-14 mb-12' id='contact-link'>
             <p className='text-2xl '>Contact</p>
             <div id='contact-link'>
                 <p className={`${formStatus == 'Message sent successfully' ? 'text-green-500' : 'text-red-500'}`}>{formStatus}</p>
             </div>
             <form ref={form} onSubmit={sendEmail}>
                 {/* honeypot input field */}
-                <input style={{'display' : 'none'}} type='text' name='honeypot' onChange={honeypotChecker}/>
+                    <input style={{'display' : 'none'}} type='text' name='honeypot' onChange={honeypotChecker}/>
 
                 <label>Name</label>
                 <input type="text" name="user_name" required />
@@ -72,7 +72,7 @@ export function Contact() {
                 <input type="email" name="user_email" required />
                 <label>Message</label>
                 <textarea name="message" required />
-                <button className='contact-submit' type="submit" value="Send" > fsdfsd</button>
+                <button className='contact-submit' type="submit" value="Send" > Send</button>
             </form>
       </div>
     );

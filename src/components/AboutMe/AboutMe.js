@@ -23,9 +23,12 @@ export function AboutMe() {
         </div>
         <div className='text-xl text-blue-500 mt-2'>About Me</div>
         <div>
-            I'm a driven software engineer who thrives on challenges and believes in the power of technology 
-            to simplify complex problems. My passion lies in continuous growth within the field, and I'm committed 
-            to pushing the boundaries of what's possible.
+            I'm a driven software engineer who thrives on challenges and believes in the power of 
+            technology to simplify complex problems. Bringing together a blend of front-end elegance 
+            and back-end robustness, I'm passionate about crafting impactful digital solutions. With 
+            a strong foundation in data structures and algorithms, I strive to optimize performance and 
+            tackle challenges collaboratively. My passion lies in continuous growth within the field, 
+            and I'm committed to pushing the boundaries of what's possible.
 
             
         </div>
